@@ -1,0 +1,27 @@
+[submodule "vendor/plugins/acts_as_taggable_redux"]
+	path = vendor/plugins/acts_as_taggable_redux
+	url = git://github.com/geemus/acts_as_taggable_redux.git
+[submodule "vendor/plugins/exception_notifier"]
+	path = vendor/plugins/exception_notifier
+	url = git://github.com/rails/exception_notification.git
+[submodule "vendor/plugins/asset_packager"]
+	path = vendor/plugins/asset_packager
+	url = git://github.com/sbecker/asset_packager.git
+[submodule "vendor/plugins/authlogic"]
+	path = vendor/plugins/authlogic
+	url = git://github.com/binarylogic/authlogic.git
+[submodule "vendor/plugins/shoulda"]
+	path = vendor/plugins/shoulda
+	url = git://github.com/thoughtbot/shoulda.git
+[submodule "vendor/plugins/factory_girl"]
+	path = vendor/plugins/factory_girl
+	url = git://github.com/thoughtbot/factory_girl.git
+[submodule "vendor/plugins/quietbacktrace"]
+	path = vendor/plugins/quietbacktrace
+	url = git://github.com/thoughtbot/quietbacktrace.git
+[submodule "vendor/plugins/rr"]
+	path = vendor/plugins/rr
+	url = git://github.com/btakita/rr.git
+[submodule "vendor/plugins/will_paginate"]
+	path = vendor/plugins/will_paginate
+	url = git://github.com/mislav/will_paginate.git
