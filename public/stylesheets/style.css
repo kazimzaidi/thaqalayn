@@ -57,3 +57,13 @@ font: 95%/1.3 TrebuchetMS,Arial,sans-serif;
 }
 ul {  padding: 0; margin: 0;}
 li { list-style-type: none;}
+
+.verse {
+  font-size: 2.0em;
+  text-align: center;
+  font-family: Scheherazade;
+}
+.verseref { 
+  color: #777;
+  font-size: 0.75em;
+}

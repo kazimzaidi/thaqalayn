@@ -1,0 +1,5 @@
+<div class="verse">
+  <%= Verse.opening.text unless verse.chapter_id == 9 -%><br />
+  <%= verse.text -%> ۝<br />
+  <span class="verseref"><%= verse.chapter_id -%>:<%= verse.ayah_index -%></span>
+</div>
