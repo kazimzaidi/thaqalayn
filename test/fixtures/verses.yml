@@ -1,0 +1,13 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  index: 1
+  chapter_id: 1
+  ayah: 1
+  text: MyText
+
+two:
+  index: 1
+  chapter_id: 1
+  ayah: 1
+  text: MyText

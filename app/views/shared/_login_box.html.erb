@@ -1,0 +1,16 @@
+<h1>Sign In</h1>
+<h2>Not a user? <%= link_to 'Signup!', new_user_path -%></h2>
+<br />
+
+<% form_for UserSession.new, :url => user_session_path do |f| %>
+  <%= f.error_messages %>
+  <%= f.label :email %><br />
+  <%= f.text_field :email, :class => 'box_input' %><br />
+  <br />
+  <%= f.label :password %><br />
+  <%= f.password_field :password, :class => 'box_input' %><br />
+  <br />
+  <%= f.check_box :remember_me %><%= f.label :remember_me %><br />
+  <br />
+  <%= f.submit "Login" %>
+<% end %>
