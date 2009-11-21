@@ -65,5 +65,15 @@ li { list-style-type: none;}
 }
 .verseref { 
   color: #777;
-  font-size: 0.75em;
+  font-size: 0.9em;
+}
+.versetranslation {
+  font-size: 1.0em;
+  color: #555;
+  font-style: italic;
+  font-family: Arial;
+  line-height: 0.7;
+}
+.versetrans {
+  text-align: center;
 }

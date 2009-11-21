@@ -1,9 +1,9 @@
 class CreateVerses < ActiveRecord::Migration
   def self.up
     create_table :verses do |t|
-      t.integer :chapter_id
-      t.integer :ayah_index
-      t.text    :text
+      t.integer :chapter_id, :null => false
+      t.integer :ayah_index, :null => false
+      t.text    :text,       :null => false
     end
 
     execute 'ALTER TABLE verses ENGINE = MyISAM'
