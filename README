@@ -1,0 +1,7 @@
+Thaqalayn - A Collaborative Islamic Research Tool
+
+Installation
+
+1. rake db:create
+2. rake db:migrate
+
