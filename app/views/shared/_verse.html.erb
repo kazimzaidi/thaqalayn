@@ -1,14 +1,14 @@
 <div class="verse">
-  <%= Verse.opening.text unless verse.chapter_id == 9 -%><br />
+  <%= Verse.opening.text unless verse.chapter.index == 9 -%><br />
 </div>
 <p class="versetrans">
   <span class="versetranslation"><%= Verse.opening.translation_by('Shakir').text %></span>
 </p>
 <div class="verse">
   <%= verse.text -%> ۝<br />
-  <%= link_to ">>", "/afasy/#{"%03d" % verse.chapter_id}#{"%03d" % verse.ayah_index}.mp3", :target => '_blank' -%>
+  <%= link_to ">>", "/afasy/#{"%03d" % verse.chapter.index}#{"%03d" % verse.ayah_index}.mp3", :target => '_blank' -%>
 </div>
 <p class="versetrans">
   <span class="versetranslation"><%= verse.translation_by('Shakir').text -%></span> <br />
-  <span class="verseref"><%= verse.chapter_id -%>:<%= verse.ayah_index -%></span>
+  <span class="verseref"><%= verse.chapter.arabic_name -%> : <%= verse.ayah_index -%></span>
 </p>

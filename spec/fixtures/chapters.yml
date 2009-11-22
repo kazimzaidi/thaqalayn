@@ -1,0 +1,41 @@
+# == Schema Information
+#
+# Table name: chapters
+#
+#  id           :integer(4)      not null, primary key
+#  index        :integer(4)
+#  arabic_name  :string(255)
+#  verse_count  :integer(4)
+#  start        :integer(4)
+#  trans_name   :string(255)
+#  english_name :string(255)
+#  revealed_in  :string(255)
+#  order        :integer(4)
+#  rukus        :integer(4)
+#  created_at   :datetime
+#  updated_at   :datetime
+#
+
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  index: 1
+  arabic_name: MyString
+  verse_count: 1
+  start: 1
+  trans_name: MyString
+  english_name: MyString
+  revealed_in: MyString
+  order: 1
+  rukus: 1
+
+two:
+  index: 1
+  arabic_name: MyString
+  verse_count: 1
+  start: 1
+  trans_name: MyString
+  english_name: MyString
+  revealed_in: MyString
+  order: 1
+  rukus: 1
