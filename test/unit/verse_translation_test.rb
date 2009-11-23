@@ -5,7 +5,7 @@
 #  id             :integer(4)      not null, primary key
 #  verse_id       :integer(4)      not null
 #  translation_id :integer(4)      not null
-#  translation    :text            default(""), not null
+#  text           :text            default(""), not null
 #  created_at     :datetime
 #  updated_at     :datetime
 #

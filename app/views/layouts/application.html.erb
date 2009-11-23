@@ -19,6 +19,9 @@
 </div>
 <div id="content">
 <div id="right">
+  <% if flash[:notice] -%>
+    <p style="border: 1px solid #aaa; padding: 5px; background: #eff;""><%= flash[:notice] -%></p>
+  <% end -%>
   <%= yield -%>
 </div>
 	

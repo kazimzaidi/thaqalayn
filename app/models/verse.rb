@@ -3,9 +3,9 @@
 # Table name: verses
 #
 #  id         :integer(4)      not null, primary key
-#  chapter_id :integer(4)
-#  ayah_index :integer(4)
-#  text       :text
+#  chapter_id :integer(4)      not null
+#  ayah_index :integer(4)      not null
+#  text       :text            default(""), not null
 #
 
 class Verse < ActiveRecord::Base

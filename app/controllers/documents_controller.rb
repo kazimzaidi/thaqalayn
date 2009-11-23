@@ -1,4 +1,5 @@
 class DocumentsController < ApplicationController
+  before_filter :require_user
   # GET /documents
   # GET /documents.xml
   def index
@@ -40,7 +41,7 @@ class DocumentsController < ApplicationController
   # POST /documents
   # POST /documents.xml
   def create
-    @document = Document.new(params[:document])
+    @document = Document.new(params[:document].merge(:user => current_user))
 
     respond_to do |format|
       if @document.save
