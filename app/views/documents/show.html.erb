@@ -1,7 +1,10 @@
-<p>
-  <b>Title:</b>
-  <%=h @document.title %>
-</p>
+<h1><%= @document.title -%></h1>
+<h2>Sections</h2>
+<ul>
+<% for section in @document.sections -%>
+  <li><%=h section.name %></li>
+<% end -%>
+</ul>
 
 
 <%= link_to 'Edit', edit_document_path(@document) %> |

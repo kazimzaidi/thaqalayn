@@ -1,0 +1,15 @@
+<h1>Add Section<h1>
+<h2><%= @document.title -%></h2>
+
+<% form_for(@section, :url => document_sections_path(@document)) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :name %><br />
+    <%= f.text_field :name %>
+  </p>
+  <p>
+    <%= f.submit 'Add' %>
+  </p>
+<% end %>
+
