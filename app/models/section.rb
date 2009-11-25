@@ -12,6 +12,7 @@
 class Section < ActiveRecord::Base
   belongs_to :user
   has_and_belongs_to_many :documents
+  has_and_belongs_to_many :assets, :order => 'position', :list => true
   validates_presence_of :name, :user_id
 
 end

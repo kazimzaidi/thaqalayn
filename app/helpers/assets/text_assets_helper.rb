@@ -1,0 +1,2 @@
+module Assets::TextAssetsHelper
+end

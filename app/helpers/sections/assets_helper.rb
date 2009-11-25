@@ -1,0 +1,2 @@
+module Sections::AssetsHelper
+end

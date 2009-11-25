@@ -1,9 +1,18 @@
 <h1><%= @document.title -%></h1>
-<h2>Sections</h2>
 <ul>
-<% for section in @document.sections -%>
-  <li><%=h section.name %></li>
-<% end -%>
+  <% for section in @document.sections -%>
+    <li style="margin-bottom: 3em;">
+    <h2><%=h section.name %></h2>
+
+    <ul>
+      <% for asset in section.assets -%>
+	<li><%= render :partial => "assets/#{asset.partial_directory}/#{asset.partial}", :object => asset.item -%></li>
+      <% end -%>
+    </ul>
+
+    <p><%= link_to 'Add Text Asset', new_document_section_text_asset_path(@document, section) -%></p>
+    </li>
+  <% end -%>
 </ul>
 
 
